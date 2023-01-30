@@ -16,7 +16,7 @@ function succes(pos){
     getWeather(latitude, longitude);
 }
 async function getCity(lat, lon){
-    let url = `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=24f517c2ec2ed505707ede99a09af491`;
+    let url = `https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=24f517c2ec2ed505707ede99a09af491`;
     const data = await fetch(url);
     const city = await data.json();
     curentCity = city[0].name;
