@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <link rel="stylesheet" href="style.css">
+    <title>live location</title>
+</head>
+<body>
+    <main class="main">
+        <div class="main__map--block">
+            <div id="map"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="main__information--block">
+            <div class="footer__city">
+                <h1 class="city--value"></h1>
+            </div>
+            <div class="footer__temp">
+                <p class="temp--value"></p>
+            </div>
+            <div class="footer__weather">
+                <p class="weather--value"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="app.js"></script>
+</html>
