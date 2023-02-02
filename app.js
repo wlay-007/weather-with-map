@@ -87,7 +87,7 @@ async function getWeather(lat, lon){
         const data = await fetch(url);
         const weather = await data.json();
         weatherValue = weather.weather[0].description;
-        urlIcon = `http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`;
+        urlIcon = `https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`;
         tempValue = Math.round((weather.main.temp) - 273.15);
         console.log(tempValue);
         outData();
