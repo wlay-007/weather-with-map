@@ -27,7 +27,7 @@ function error (){
 }
 async function getCity(lat, lon){
     try{
-        const url = `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=24f517c2ec2ed505707ede99a09af491`;
+        const url = `https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&limit=1&appid=24f517c2ec2ed505707ede99a09af491`;
         const data = await fetch(url);
         const city = await data.json();
         cityName = city[0].name;
