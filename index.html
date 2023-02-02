@@ -11,23 +11,30 @@
 </head>
 <body>
     <main class="main">
-        <div class="main__map--block">
-            <div id="map"></div>
+        <div class="main__search--area">
+            <div class="main__search--box">
+                <input class="main__input--city" type="text" placeholder="Search city">
+                <button class="main__serch--button"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
+            </div>
+        </div>
+        <div class="main__weather--area">
+            <div class="main__wether--block">
+                <div class="main__region">
+                    <h1 class="main__city"></h1>
+                </div>
+                <div class="main__wether--values">
+                    <div class="main__temp--icon">
+                        <div class="main__icon"></div>
+                        <p class="main__temp"></p>
+                    </div>
+                    <p class="main__weather"></p>
+                </div>
+            </div>
+            <div class="main__map--block">
+                <div id="map"></div>
+            </div>
         </div>
     </main>
-    <footer class="footer">
-        <div class="main__information--block">
-            <div class="footer__city">
-                <h1 class="city--value"></h1>
-            </div>
-            <div class="footer__temp">
-                <p class="temp--value"></p>
-            </div>
-            <div class="footer__weather">
-                <p class="weather--value"></p>
-            </div>
-        </div>
-    </footer>
 </body>
 <script src="app.js"></script>
 </html>
