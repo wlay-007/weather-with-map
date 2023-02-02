@@ -39,7 +39,7 @@ body{
     padding-bottom: 100px;
 }
 .main__input--city{
-    border: 0;
+    border: none;
     box-shadow: 4px 4px 27px 0px rgba(34, 60, 80, 0.2);
     border-radius: 10px;
     padding: 10px 40px 10px 10px ;
@@ -47,7 +47,6 @@ body{
     outline: none;
 }
 .main__serch--button{
-    fill: black;
     cursor: pointer;
     font-size: 2rem;
     border: 0;
